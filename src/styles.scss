@@ -1,5 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+//police globale de l'application web qui est fixé directement à Roboto Condensed
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 body {
   font-family: 'Roboto Condensed', sans-serif;
+  background-color: #eff2f5 !important;
+}
+//background color pour toutes les pages
+.background-grey{
+  background-color: #eff2f5 !important;
+}
+.border-none{
+  border: none !important;
+}
+.min-height-80{
+  min-height: 100px;
+}
+.border-right{
+  border-right: 2px solid #000000;
+}
+.custom-border{
+  border: solid #000000;
+  border-radius: 5px;
+}
+.blue-color {
+  color: #005fd0 !important;
 }

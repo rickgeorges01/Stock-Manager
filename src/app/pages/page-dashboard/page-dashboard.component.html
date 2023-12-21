@@ -1,0 +1,37 @@
+<!-- Conteneur principal de la page -->
+<div class="main-container">
+  <!-- Ligne Bootstrap pour organiser le contenu en grille horizontale -->
+  <div class="row min-height-600 no-flex-wrap">
+    <!-- Colonne de gauche pour le menu -->
+    <div class="card col-md-2 me-3">
+      <!-- Colonne interne pour le contenu du menu -->
+      <div class="col pe-0 ps-0">
+        <!-- Titre du menu -->
+        <div class="card mt-3 mb-2 border-none">
+          <h4>Stock Manager</h4>
+        </div>
+
+        <!-- Component Angular 'app-menu': composant  pour afficher le menu de navigation -->
+        <div> <app-menu></app-menu></div>
+      </div>
+    </div>
+
+    <!-- Colonne de droite pour le contenu principal -->
+    <div class="card col-md-10 ps-0 pe-0 background-grey border-none">
+      <!-- Colonne interne pour structurer le contenu principal  -->
+      <div class="col ps-0 pe-0 d-flex flex-column justify-content-between">
+        <!-- Section d'en-tête -->
+        <div class="card p-4 min-height-80 mb-2"> <app-header></app-header> </div>
+        <!-- Conteneur principal pour le contenu dynamique -->
+        <!-- Router Outlet d'Angular -->
+        <div class="card mb-2" style="min-height: 480px">
+          <router-outlet></router-outlet>
+        </div>
+        <!-- Pied de page  -->
+        <div class="card min-height-80 "> footer </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

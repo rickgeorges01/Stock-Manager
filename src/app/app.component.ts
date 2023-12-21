@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import {PageLoginComponent} from "./page-login/page-login.component";
-import {PageInscriptionComponent} from "./page-inscription/page-inscription.component";
+import {PageLoginComponent} from "./pages/page-login/page-login.component";
+import {PageInscriptionComponent} from "./pages/page-inscription/page-inscription.component";
 
 @Component({
   selector: 'app-root',
