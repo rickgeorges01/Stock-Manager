@@ -1,8 +1,10 @@
 <div class="col m-3 mb-3">
+  <!--IMAGE PRODUIT-->
   <div class="col-md-12 mb-3">
     <img src="assets/produit.png" class="rounded-circle" width="100px" height="100px">
   </div>
   <hr>
+  <!--Informations articles-->
   <div class="col-md-12">
     <div class="col-md-12 mb-3">
         <h2><i class="fas fa-info-circle blue-color"></i>&nbsp;Information de l'article</h2>
@@ -11,23 +13,23 @@
       <form>
         <div class="row mb-3">
           <div class="col">
-            <input type="text" class="form-control" placeholder="Code article" aria-label="First name">
+            <input type="text" class="form-control" placeholder="Code article">
           </div>
           <div class="col">
-            <input type="text" class="form-control" placeholder="Designation" aria-label="Last name">
-          </div>
-        </div>
-        <div class="row mb-3">
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Prix unitaire HT" aria-label="First name">
-          </div>
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Taux TVA" aria-label="Last name">
+            <input type="text" class="form-control" placeholder="Designation" >
           </div>
         </div>
         <div class="row mb-3">
           <div class="col">
-            <input type="text" class="form-control" placeholder="Prix unitaire TTC" aria-label="First name">
+            <input type="text" class="form-control" placeholder="Prix unitaire HT" >
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Taux TVA" >
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Prix unitaire TTC" >
           </div>
           <div class="col">
             <select class="form-select" aria-label="Default select example">
@@ -41,8 +43,9 @@
       </form>
     </div>
   </div>
+  <!--Bouttons d'actions-->
   <div class="col-md-12 text-end ">
-    <button class="btn btn-outline-danger me-3">
+    <button class="btn btn-outline-danger me-3" (click)="cancelClick()">
       <i class="fas fa-ban"></i>&nbsp;ANNULER
     </button>
     <button class="btn btn-outline-primary">

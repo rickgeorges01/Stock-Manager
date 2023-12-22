@@ -1,0 +1,54 @@
+<div class="row m-3">
+  <!--PANEL USERS 1-->
+  <div class="card col-md-4 text-center ms-3">
+    <div class="col">
+      <!--IMAGE USERS-->
+      <div class="mb-3 mt-3">
+        <div class="mb-3 mt-3">
+          <img src="assets/employe.png" class="rounded-circle" width="100px" height="100px">
+        </div>
+      </div>
+      <!--INFOS USERS-->
+      <div class="mb-3">
+        <h2>Noms & Prenoms</h2>
+        <small class="form-text text-muted"> Adresse 1 & 2</small>
+      </div>
+      <!--BUTTONS ACTIONS-->
+      <div class="col mb-3">
+        <button class="btn btn-outline-primary me-3">
+          <i class="fas fa-edit"></i>&nbsp;Modifier le profil
+        </button>
+        <button class="btn btn-outline-warning" (click)="modifierMDP()">
+          <i class="fas fa-key"></i>&nbsp;Changer le mot de passe
+        </button>
+      </div>
+    </div>
+  </div>
+  <!--PANEL USERS 2-->
+  <div class="col-md-7">
+    <table class="table">
+      <tbody>
+      <tr>
+        <th scope="row">Nom Complet</th>
+        <td>nom prenom</td>
+      </tr>
+      <tr>
+        <th scope="row">E-Mail</th>
+        <td>prenom.nomgmail.com</td>
+      </tr>
+      <tr>
+        <th scope="row">Telephone</th>
+        <td>04 05 06 96 89</td>
+      </tr>
+      <tr>
+        <th scope="row">Adresse</th>
+        <td>12365 ville</td>
+      </tr>
+      <tr>
+        <th scope="row">Entreprise</th>
+        <td>Nom entreprise</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

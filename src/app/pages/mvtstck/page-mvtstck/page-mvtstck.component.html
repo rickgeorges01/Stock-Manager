@@ -1,0 +1,43 @@
+<div class="col">
+  <div class="row m-3">
+    <div class="col-md-8 p-0">
+      <h2>Mouvements du stocks</h2>
+    </div>
+    <div class="col-md-4 text-end">
+      <app-boutton-action
+        [isImpVisible]="false"
+        [isNewVisible]="false">
+
+      </app-boutton-action>
+    </div>
+  </div>
+
+  <div class="row m-3 h-100" >
+    <div class="accordion accordion-flush h-100" id="accordionFlushExample">
+      <div class="accordion-item mb-0">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            <app-detail-mvt-stck-article></app-detail-mvt-stck-article>
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" style="max-height: 300px; overflow-y:scroll ">
+          <div class="accordion-body">
+            <app-detail-mvt-stck></app-detail-mvt-stck>
+            <app-detail-mvt-stck></app-detail-mvt-stck>
+            <app-detail-mvt-stck></app-detail-mvt-stck>
+            <app-detail-mvt-stck></app-detail-mvt-stck>
+            <app-detail-mvt-stck></app-detail-mvt-stck>
+            <app-detail-mvt-stck></app-detail-mvt-stck>
+            <app-detail-mvt-stck></app-detail-mvt-stck>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-md-12 text-center">
+      <app-pagination></app-pagination>
+    </div>
+  </div>
+</div>

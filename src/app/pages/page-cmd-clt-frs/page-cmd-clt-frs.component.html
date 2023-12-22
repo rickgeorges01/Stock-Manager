@@ -1,0 +1,51 @@
+<div class="col">
+  <div class="row m-3">
+    <div class="col-md-8 p-0">
+      <!--Renvoie l'origin de la demande (clients ou fournisseurs)-->
+      <h2>Commandes {{origin}}</h2>
+    </div>
+    <div class="col-md-4 text-end">
+      <app-boutton-action
+        [isImpVisible]="false"
+        (clickEvent)="newCommande()"
+      ></app-boutton-action>
+    </div>
+  </div>
+
+  <div class="row m-3 h-100" >
+    <div class="accordion accordion-flush h-100" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            <app-details-cmd-clt-frs></app-details-cmd-clt-frs>
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" style="max-height: 300px; overflow-y:scroll ">
+          <div class="accordion-body">
+            <app-detail-cmd></app-detail-cmd>
+            <app-detail-cmd></app-detail-cmd>
+            <app-detail-cmd></app-detail-cmd>
+            <app-detail-cmd></app-detail-cmd>
+            <app-detail-cmd></app-detail-cmd>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-md-6 text-lg-start">
+              <h5><strong>12 articles commandées</strong></h5>
+            </div>
+            <div class="col-md-6 text-lg-end">
+              <h5><strong>Total commande: 123.97</strong></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-md-12 text-center">
+      <app-pagination></app-pagination>
+    </div>
+  </div>
+</div>

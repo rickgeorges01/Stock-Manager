@@ -1,1 +1,18 @@
-<p>boutton-action works!</p>
+<div class="row d-flex justify-content-end">
+  <div class="col-md-4">
+    <button type="button" class="btn btn-outline-warning" *ngIf="isImpVisible">
+      <i class="fas fa-upload"></i>&nbsp;IMPORTER
+    </button>
+  </div>
+  <div class="col-md-4">
+    <button type="button" class="btn btn-outline-success" *ngIf="isExpVisible">
+      <i class="fas fa-download"></i>&nbsp;EXPORTER
+    </button>
+  </div>
+  <!--Ajout d'une fonction clic afin d'envoyer un évènement-->
+  <div class="col-md-4">
+    <button type="button" class="btn btn-outline-primary" (click)="bouttonNewClick()" *ngIf="isNewVisible">
+      <i class="fas fa-plus-circle"></i>&nbsp;NOUVEAU
+    </button>
+  </div>
+</div>

@@ -1,0 +1,109 @@
+<div class="col m-5 mb-3">
+  <!--Informations commandes-->
+  <div class="col-md-12">
+    <!--TITRE PAGE-->
+    <div class="col-md-12 mb-3">
+      <!--Renvoie l'origin de la demande (clients ou fournisseurs)-->
+      <h2><i class="fas fa-tags blue-color"></i>&nbsp;Nouvelle commande {{origin}}</h2>
+    </div>
+    <!--PANEL 2CI-->
+    <div class="col-md-12">
+      <div class="row p-4 mt-2 custom-border">
+        <!--PANEL COMMANDE-->
+        <div class="col-md-5 border-right">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control"  placeholder="Code Commande">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Date Commande">
+            </div>
+            <div class="mb-3">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Selectionner un client</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <!--PANEL CLIENT-->
+        <div class="col-md-5 border-right">
+          <div class="col">
+            <div class="row">
+              <div class="col-md-1"><i class="fas fa-info-circle blue-color"></i></div>
+              <div class="col-md-11">Nom</div>
+            </div>
+            <div class="row">
+              <div class="col-md-1"><i class="fas fa-info-circle blue-color"></i></div>
+              <div class="col-md-11">Prenom</div>
+            </div>
+            <div class="row">
+              <div class="col-md-1"><i class="fas fa-phone blue-color"></i></div>
+              <div class="col-md-11">08 15 96 89 32</div>
+            </div>
+            <div class="row">
+              <div class="col-md-1"><i class="fas fa-hourglass-start blue-color"></i></div>
+              <div class="col-md-11">EN PREPARATION</div>
+            </div>
+          </div>
+        </div>
+        <!--IMAGE COMMANDE-->
+        <div class="col-md-2 text-center">
+          <div class="col-md-12 mb-3">
+            <img src="assets/new_cmd.png" class="rounded-circle" width="150px" height="150px">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--PANEL ARTICLE-->
+    <div class="row p-4 mt-2 custom-border">
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Code Article">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Quantité">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Prix Unitaire" >
+        </div>
+        <div class="col">
+          <button type="button" class="btn btn-outline-success">
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <i class="fas fa-plus-circle"></i>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--PANEL DETAIL COMMANDE-->
+    <div class="row p-4 mt-2 custom-border" style="max-height: 300px;overflow-y: scroll">
+      <app-detail-cmd></app-detail-cmd>
+      <app-detail-cmd></app-detail-cmd>
+      <app-detail-cmd></app-detail-cmd>
+      <app-detail-cmd></app-detail-cmd>
+      <app-detail-cmd></app-detail-cmd>
+      <app-detail-cmd></app-detail-cmd>
+      <app-detail-cmd></app-detail-cmd>
+      <app-detail-cmd></app-detail-cmd>
+      <app-detail-cmd></app-detail-cmd>
+      <app-detail-cmd></app-detail-cmd>
+      <app-detail-cmd></app-detail-cmd>
+    </div>
+    <!--PANEL TOTAL COMMANDE-->
+    <div class="row p-4 mt-2 custom-border text-lg-end">
+        <h4>Total de la commande : 156</h4>
+    </div>
+  </div>
+  <!--BOUTTONS D'ACTIONS-->
+  <div class="col-md-12 text-end mt-2">
+    <button class="btn btn-outline-danger me-3">
+      <i class="fas fa-ban"></i>&nbsp;ANNULER
+    </button>
+    <button class="btn btn-outline-primary">
+      <i class="fas fa-save"></i>&nbsp;ENREGISTRER
+    </button>
+  </div>
+</div>

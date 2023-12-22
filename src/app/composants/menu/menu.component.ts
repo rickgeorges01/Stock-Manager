@@ -53,7 +53,7 @@ export class MenuComponent implements OnInit{
           id:'2.1',
           titre: 'Mouvements du stock',
           icon:'fas fa-people-carry',
-          url:'',
+          url:'mvt-stock',
         }
 
       ]
@@ -68,13 +68,13 @@ export class MenuComponent implements OnInit{
           id:'3.1',
           titre: 'Clients',
           icon:'fas fa-user',
-          url:'',
+          url:'clients',
         },
         {
           id:'3.2',
           titre: 'Commandes clients',
           icon:'fas fa-tags',
-          url:'',
+          url:'cmd-clients',
         }
 
       ]
@@ -89,13 +89,13 @@ export class MenuComponent implements OnInit{
           id:'4.1',
           titre: 'Fournisseurs',
           icon:'fas fa-user',
-          url:'',
+          url:'fournisseurs',
         },
         {
           id:'4.2',
           titre: 'Commandes fournisseurs',
           icon:'fas fa-shopping-cart',
-          url:'',
+          url:'cmd-fournisseurs',
         }
 
       ]
@@ -110,13 +110,13 @@ export class MenuComponent implements OnInit{
           id:'5.1',
           titre: 'Catégories',
           icon:'fas fa-wrench',
-          url:'',
+          url:'categories',
         },
         {
           id:'5.2',
           titre: 'Utilisateurs',
           icon:'fas fa-users-cog',
-          url:'',
+          url:'users',
         }
 
       ]

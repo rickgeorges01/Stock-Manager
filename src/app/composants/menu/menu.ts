@@ -4,5 +4,6 @@ export interface Menu{
   titre?: string;
   icon?: string;
   url?: string;
+  active?:boolean;
   sousMenu?:Array<Menu>;
 }

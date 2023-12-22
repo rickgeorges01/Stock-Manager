@@ -1,0 +1,66 @@
+<div class="row mb-1 me-0  custom-border">
+  <!-- Historiques de corrections-->
+  <div class="col-md-3 border-right mb-1 mt-1">
+      <div class="row text-center">
+        <div class="col-md-11">12.12.2023</div>
+      </div>
+  </div>
+  <!-- Stock actuel-->
+  <div class="col-md-3 border-right mb-1 mt-1">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h5> 125</h5>
+        </div>
+      </div>
+  </div>
+  <!-- Mouvement-->
+  <div class="col-md-3 border-right mb-1 mt-1">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h5> Sortie</h5>
+      </div>
+    </div>
+  </div>
+
+  <!-- Origine-->
+  <div class="col-md-3  mb-1 mt-1 text-center">
+    <div class="row">
+      <h5> COMMANDE_CLIENT</h5>
+    </div>
+  </div>
+</div>
+
+<!-- Modal de modification du stock-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Corrections des stocks</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Quantité">
+          </div>
+          <div class="mb-3">
+            <select>
+              <option selected>Selectionner une Correction</option>
+              <option>Correction Positive</option>
+              <option>Correction Negative</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger " data-bs-dismiss="modal">
+          <i class="fas fa-ban"></i>&nbsp;ANNULER
+        </button>
+        <button type="button" class="btn btn-outline-primary">
+          <i class="fas fa-save"></i>&nbsp;ENREGISTRER
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
